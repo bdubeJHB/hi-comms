@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "A project built from scratch...  without create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest test"
+  },
+  "author": "Benedict Dube",
+  "license": "ISC"
+}
