@@ -1,7 +1,7 @@
 {
-  "name": "my-project",
-  "version": "1.0.0",
-  "description": "A project built from scratch...  without create-react-app",
+  "name": "hi-comms",
+  "version": "1.1.0",
+  "description": "A project built from scratch...  without create-react-app, for some weird reason. This is a practice project wherein I will put the output of the learning I have been doing on Node, React, Express, Babel and included tech stacks. The commits are not squashed, so the incremental decisions process is on show",
   "main": "index.js",
   "scripts": {
     "test": "npx jest test"
