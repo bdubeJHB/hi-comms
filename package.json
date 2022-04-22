@@ -4,7 +4,7 @@
   "description": "A project built from scratch...  without create-react-app, for some weird reason. This is a practice project wherein I will put the output of the learning I have been doing on Node, React, Express, Babel and included tech stacks. The commits are not squashed, so the incremental decisions process is on show",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently --kill-others \"npm run-server\" \"npm run-client\"",
+    "start": "run-p npm run-server npm run-client",
     "run-client": "npm run src/app.js",
     "run-server": "npm run src/server/index.js",
     "test": "npx jest test"
@@ -27,11 +27,11 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "babel-jest": "^27.5.1",
-    "concurrently": "^7.1.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
     "react-test-renderer": "^18.0.0"
   }
 }
