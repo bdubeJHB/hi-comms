@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run run-server & npm run run-client && fg",
     "run-client": "npm run src/app.js",
-    "run-server": "npm run src/server/server.js",
+    "run-server": "npm run src/server/index.js",
     "test": "npx jest test"
   },
   "author": "Benedict Dube",
@@ -25,7 +25,7 @@
     "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.17.0",
     "babel-jest": "^27.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
