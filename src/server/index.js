@@ -4,10 +4,10 @@ const PORT = process.env.SERVER_PORT || 5000;
 
 const server = express();
 
-server.get("/", (request, response) => {
+server.all("*", (request, response) => {
     response
-        .status(200)
-        .json({});
+        .status(404)
+        .end();
 });
 
 //TODO: Add error handling for catch all
