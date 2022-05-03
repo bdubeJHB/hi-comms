@@ -4,6 +4,10 @@ const PORT = process.env.SERVER_PORT || 5000;
 
 const server = express();
 
+let all_contacts = require("./controllers/all_contacts.js");
+
+server.use("/contacts", all_contacts);
+
 server.all("*", (request, response) => {
     response
         .status(404)
