@@ -4,7 +4,7 @@ const PORT = process.env.SERVER_PORT || 5000;
 
 const server = express();
 
-let all_contacts = require("./controllers/all_contacts.js");
+let all_contacts = require("./controllers/get_contact.js");
 
 server.use("/contacts", all_contacts);
 
