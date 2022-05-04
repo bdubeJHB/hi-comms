@@ -1,9 +1,11 @@
+import App from "./client/App";
+
 let React = require("react");
-const ReactDOM = require("react-dom");
+const ReactDOM = require("react-dom/client");
 
-let App = require("./client/App");
-
-ReactDOM.render(
-    <App />,
-    document.getElementById("main")
+const root = ReactDOM.createRoot(document.getElementById('main'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );

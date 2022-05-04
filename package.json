@@ -4,8 +4,8 @@
   "description": "A project built from scratch...  without create-react-app, for some weird reason. This is a practice project wherein I will put the output of the learning I have been doing on Node, React, Express, Babel and included tech stacks. The commits are not squashed, so the incremental decisions process is on show",
   "main": "index.js",
   "scripts": {
-    "start": "run-p start-server start-client",
-    "start-client": "node src/client/App.js",
+    "start": "run-p build start-server start-client",
+    "start-client": "react-scripts start",
     "start-server": "node src/server/index.js",
     "test": "npx jest test",
     "build": "webpack --mode development"
@@ -22,6 +22,7 @@
     "express": "^4.17.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2"
   },
@@ -35,5 +36,17 @@
     "nodemon": "^2.0.15",
     "npm-run-all": "^4.1.5",
     "react-test-renderer": "^18.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
