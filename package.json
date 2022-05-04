@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "run-p build start-server start-client",
-    "start-client": "react-scripts start",
+    "start-client": "cross-env PUBLIC_URL=/src/client/ react-scripts start",
     "start-server": "node src/server/index.js",
     "test": "npx jest test",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "package": "react-scripts build"
   },
+  "homepage": "/src/client",
   "author": "Benedict Dube",
   "entryPoint": "src/app.js",
   "license": "ISC",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "babel-jest": "^27.5.1",
+    "cross-env": "^7.0.3",
     "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
