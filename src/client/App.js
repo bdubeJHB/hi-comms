@@ -1,10 +1,18 @@
+import Card from "./components/card";
+import contacts_fetcher from "./services/contacts";
+
+const all_contacts = contacts_fetcher();
+
 let App = () => {
-    let all_contacts = [];
+    const contact_cards = all_contacts.map(
+        contact => {
+            return <Card key={contact.id} {...contact} />
+        }
+    );
 
     return (
-        <main id="container">
-            <h1>Finally!!!</h1>
-            <p>It seems to be working</p>
+        <main id="app">
+            {contact_cards}
         </main>
     );
 }

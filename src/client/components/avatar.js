@@ -1,6 +1,5 @@
-let Avatar = (props) => {
-    let { user, avatar_uri } = props;
-
+let Avatar = ({ user, avatar_uri }) => {
+    //TODO: Add handlers to allow viewing contact profile
     return (
         <img
             className="avatar"
