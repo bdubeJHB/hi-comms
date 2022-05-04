@@ -6,6 +6,7 @@ const server = express();
 
 let all_contacts = require("./controllers/get_contact.js");
 
+server.use(require("./config/cors"));
 server.use("/contacts", all_contacts);
 
 server.all("*", (request, response) => {

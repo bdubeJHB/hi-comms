@@ -1,1 +1,0 @@
-console.log("The client is running, but, there is no functionality yet  :(");
