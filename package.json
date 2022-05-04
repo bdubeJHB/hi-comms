@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "run-p build start-server start-client",
-    "start-client": "cross-env PUBLIC_URL=/src/client/ react-scripts start",
+    "start-client": "react-scripts start",
     "start-server": "node src/server/index.js",
     "test": "npx jest test",
     "build": "webpack --mode development",
